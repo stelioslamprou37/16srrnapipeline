@@ -1,0 +1,30 @@
+# Data Access Instructions
+
+The dataset used in this project is a shotgun metagenomic sample from the NCBI Sequence Read Archive (SRA).
+
+## Sample Information
+- **Accession ID**: SRR35094901
+- **Description**: Environmental soil metagenomics sample
+- **Format**: FASTQ
+- **Size**: ~95 MB (subset used)
+
+## Download Instructions
+
+You can download the FASTQ file using the following command-line tool:
+
+### Option 1: Using `fasterq-dump`
+```bash
+fasterq-dump SRR35094901
+```
+
+### Option 2: Using `prefetch` (for caching)
+```bash
+prefetch SRR35094901
+fasterq-dump --split-files SRR35094901
+```
+
+If you are using Galaxy or a GUI-based environment, you can also search for `SRR35094901` on [https://www.ncbi.nlm.nih.gov/sra](https://www.ncbi.nlm.nih.gov/sra) and download directly.
+
+## Note
+
+Due to Taiga’s 2 GB limit, the full dataset is not included in the submission. A subset (under 100 MB) was used to meet runtime and size constraints. If needed, refer to the original SRA record for the complete data.

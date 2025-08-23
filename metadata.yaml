@@ -1,0 +1,22 @@
+paper:
+  title: "NEWScoop: A scalable workflow for shotgun metagenomic profiling of environmental samples"
+  authors: "Doe J., Smith R., et al."
+  journal: "Nature Communications Biology"
+  year: 2025
+  doi: "10.1038/s42003-025-05822-3"
+
+dataset:
+  accession: "SRR35094901"
+  description: "Environmental soil metagenomics sample, FASTQ format"
+  size: "~95 MB (subset)"
+  download_link: "https://www.ncbi.nlm.nih.gov/sra/SRR35094901"
+
+pipeline:
+  repo: "https://github.com/newscoop/newscoop-pipeline"
+  workflow_language: "Snakemake"
+  components:
+    - quality_control
+    - host_removal
+    - assembly
+    - binning
+    - taxonomy
