@@ -1,9 +1,6 @@
 paper:
-  title: "NEWScoop: A scalable workflow for shotgun metagenomic profiling of environmental samples"
-  authors: "Doe J., Smith R., et al."
-  journal: "Nature Communications Biology"
-  year: 2025
-  doi: "10.1038/s42003-025-05822-3"
+  title: "Nationwide multicentre study of Nanopore long-read sequencing for 16S rRNA-species identification"
+ 
 
 dataset:
   accession: "SRR35094901"
@@ -11,12 +8,4 @@ dataset:
   size: "~95 MB (subset)"
   download_link: "https://www.ncbi.nlm.nih.gov/sra/SRR35094901"
 
-pipeline:
-  repo: "https://github.com/newscoop/newscoop-pipeline"
-  workflow_language: "Snakemake"
-  components:
-    - quality_control
-    - host_removal
-    - assembly
-    - binning
-    - taxonomy
+
